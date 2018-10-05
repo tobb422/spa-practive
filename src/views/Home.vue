@@ -12,8 +12,8 @@
 </template>
 
 <script>
-import Header from "../components/Header.vue";
-import Footer from "../components/Footer.vue";
+import Header from "@/components/Header.vue";
+import Footer from "@/components/Footer.vue";
 
 export default {
   name: "Home",
@@ -22,7 +22,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../styles/border";
+@import "~@/styles/border";
 
 .wrapper {
   width: 970px;
