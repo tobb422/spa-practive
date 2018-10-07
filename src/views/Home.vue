@@ -37,7 +37,25 @@
           </ul>
         </section>
         <section class="articles">
-          <h2 class="hidden">ARTICLES</h2>
+          <!--<h2 class="hidden">ARTICLES</h2>-->
+          <div class="clearfix">
+            <a href="#" class="article-box">
+              <h3 class="title">実務で使えるHTML/CSSモダンコーディングTIPS</h3>
+              <p class="desc">
+                新しい要素が増えて大幅に表現力が広がったHTML5/CSS3を活用し、モダンなコーディングにチャレンジしましょう！
+              </p>
+              <time class="date" datetime="2015-06-17">2015.06.17 WED</time>
+              <img class="img" src="../assets/coding.jpg" alt="コーディング画面">
+            </a>
+            <a href="#" class="article-box">
+              <h3 class="title">実務で使えるHTML/CSSモダンコーディングTIPS</h3>
+              <p class="desc">
+                新しい要素が増えて大幅に表現力が広がったHTML5/CSS3を活用し、モダンなコーディングにチャレンジしましょう！
+              </p>
+              <time class="date" datetime="2015-06-17">2015.06.17 WED</time>
+              <img class="img" src="../assets/coding.jpg" alt="コーディング画面">
+            </a>
+          </div>
         </section>
       </main>
       <div class="sidemenu">
@@ -195,6 +213,67 @@ export default {
     text-overflow: ellipsis;
     white-space: nowrap;
   }
+}
+
+.article-box {
+  position: relative;
+  display: block;
+  width: 315px;
+  height: 360px;
+  margin-bottom: 30px;
+  padding: 210px 15px 0;
+  box-shadow: 6px 6px 8px -4px rgba(0, 0, 0, 0.15);
+  transition: opacity 0.15s;
+  box-sizing: border-box;
+
+  .img {
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .title {
+    margin-top: 30px;
+    color: #555;
+    font-size: 1.4rem;
+    line-height: 1.6;
+  }
+
+  .desc {
+    margin-top: 5px;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .date {
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+    display: block;
+    width: 160px;
+    padding: 4px;
+    background-color: #b5d264;
+    color: #2d3d54;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+}
+
+.article-box:hover {
+  opacity: 0.8;
+}
+
+.article-box:nth-of-type(odd) {
+  float: left;
+}
+
+.article-box:nth-of-type(even) {
+  float: right;
 }
 
 .sidemenu {
