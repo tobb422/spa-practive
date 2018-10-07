@@ -3,6 +3,20 @@
     <Header />
     <div class="wrapper clearfix">
       <main class="main">
+        <section class="hot-topic">
+          <h2 class="hidden">HOT TOPIX</h2>
+          <a href="#" class="hot-topix">
+            <img class="image" src="../assets/coding.jpg" alt="コーディング画面">
+            <div class="content">
+            </div>
+          </a>
+        </section>
+        <section class="news">
+          <h2>NEWS</h2>
+        </section>
+        <section class="articles">
+          <h2 class="hidden">ARTICLES</h2>
+        </section>
       </main>
       <div class="sidemenu">
       </div>
@@ -22,8 +36,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import "~@/styles/border";
-
 .wrapper {
   width: 970px;
   margin: 30px auto 40px;
@@ -38,17 +50,23 @@ export default {
 .main {
   display: block;
   float: left;
-  height: 500px;
   width: 660px;
+}
 
-  @include border;
+.hot-topic {
+  display: block;
+  height: 300px;
+  margin-bottom: 30px;
+  box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.15);
+  transition: opacity 0.15s;
+}
+
+.hot-topic:hover {
+  opacity: 0.85;
 }
 
 .sidemenu {
   float: right;
-  height: 500px;
   width: 275px;
-
-  @include border;
 }
 </style>
