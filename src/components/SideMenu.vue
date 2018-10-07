@@ -4,8 +4,10 @@
     <ol class="ranking">
       <li class="ranking-item">
         <a href="#">
-          <img class="image" src="../assets/coding.jpg" alt="コーディング画面">
-          <span class="order"></span>
+          <div class="order-box">
+            <img class="image" src="../assets/coding.jpg" alt="コーディング画面">
+            <span class="order"></span>
+          </div>
           <p class="text">HTML/CSSコーディングと切っても切れないWebブラウザのシェア動向をチェックしよう</p>
         </a>
       </li>
@@ -95,9 +97,39 @@
     opacity: 0.8;
   }
 
-  .image {
+  .order-box {
+    display: inline-block;
+    position: relative;
     width: 55px;
     height: 55px;
+    padding-top: 9px;
+    padding-right: 19px;
+
+    .image {
+      width: 100%;
+      height: 100%;
+    }
+
+    .order {
+      position: absolute;
+      top: 0;
+      right: 10px;
+      width: 18px;
+      height: 18px;
+      border: 1px solid #ccc;
+      color: #aaa;
+      vertical-align: 20px;
+      text-align: center;
+      font-weight: bold;
+      line-height: 16px;
+      border-radius: 9px;
+    }
+
+    .order::before {
+      content: '1';
+      display: inline-block;
+      font-size: 1.0rem;
+    }
   }
 
   .text {
@@ -110,37 +142,12 @@
     box-sizing: border-box;
   }
 
-  .order {
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    margin: 0 10px;
-    border: 1px solid #ccc;
-    color: #aaa;
-    vertical-align: 20px;
-    text-align: center;
-    font-weight: bold;
-    line-height: 16px;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-
   .ranking-item:nth-of-type(1) .order {
     border: none;
     color: #fff;
     font-weight: normal;
     line-height: 18px;
     background-color: #dab413;
-  }
-
-  .order::before {
-    content: '1';
-    display: inline-block;
-    font-size: 1.0rem;
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
   }
 }
 
