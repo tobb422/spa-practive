@@ -42,6 +42,12 @@
         <p>準備中</p>
       </li>
     </ul>
+    <!--<h2 class="hidedn">SEARCH</h2>-->
+    <form class="search-box">
+      <input class="search-input" type="text" name="search" placeholder="SEARCH">
+      <input class="search-button" type="submit" value="検索">
+      <p class="text">サイト内の文章を検索できます。</p>
+    </form>
   </div>
 </template>
 
@@ -169,6 +175,36 @@
 
 .documents a:hover {
   text-decoration: underline;
+}
+
+.search-box {
+  padding: 15px;
+  background-color: #ccc;
+  font-size: 0;
+
+  .search-input {
+    width: 205px;
+    height: 26px;
+    padding: 0 10px;
+    border: none;
+  }
+
+  .search-button {
+    width: 40px;
+    height: 26px;
+    border: none;
+    background-color: #d03c56;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .text {
+    margin-top: 12px;
+  }
+}
+
+.search-box > * {
+  font-size: 1.2rem;
 }
 
 </style>
