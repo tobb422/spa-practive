@@ -27,6 +27,13 @@
                 <span class="title">WORKを更新しました。</span>
               </a>
             </li>
+            <li class="scroll-item">
+              <a href="#">
+                <time class="date" datetime="2015-08-12">2015.08.12 WED</time>
+                <span class="category">TOPIC</span>
+                <span class="title">CSSでここまでできる！？ホントに使えるCSSセレクタ10選！</span>
+              </a>
+            </li>
           </ul>
         </section>
         <section class="articles">
@@ -118,11 +125,76 @@ export default {
     font-size: 1.1rem;
     line-height: 1;
   }
-
 }
 
 .hot-topic:hover {
   opacity: 0.85;
+}
+
+.heading {
+  padding: 10px 12px;
+  background: url("../assets/bg-news.png");
+  letter-spacing: 1px;
+  font-size: 1.6rem;
+  color: rgb(255, 0, 0);
+}
+
+.scroll-list {
+  max-height: 220px;
+  overflow-y: auto;
+  margin-bottom: 30px;
+  list-style-type: none;
+
+  .scroll-item a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    font-size: 0;
+    transision: background-color 0.1s;
+  }
+
+  .scroll-item a:hover {
+    background-color: #fafaf8;
+  }
+
+  .scroll-item:nth-of-type(even) a{
+    background: url("../assets/bg-news.png");
+  }
+
+  .date {
+    display: inline-block;
+    width: 19%;
+    font-size: 1.0rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+
+  .category {
+    display: inline-block;
+    width: 8%;
+    font-size: 1.0rem;
+    border-radius: 5px;
+    background-color: #d03c56;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 16px;
+     text-align: center;
+  }
+
+  .category.news {
+    background-color: #2c3c53;
+  }
+
+  .title {
+    display: inline-block;
+    width: 73%;
+    padding-left: 15px;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 }
 
 .sidemenu {
