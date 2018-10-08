@@ -130,6 +130,10 @@ body {
   text-align: center;
   font-size: 1.4rem;
   font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+  @media (max-width: 768px) {
+    font-size: 1.3rem;
+  }
 }
 
 a:link, a:visited, a:hover, a:active {
@@ -139,12 +143,20 @@ a:link, a:visited, a:hover, a:active {
 
 .header {
   padding: 170px 30px 80px;
+
+  @media (max-width: 768px) {
+    padding-top: 60px;
+  }
 }
 
 .site-title-sub {
   margin: 0 0 30px;
   letter-spacing: 1px;
   font-size: 2.2rem;
+
+  @media (max-width: 768px) {
+    font-size: 1.7rem;
+  }
 }
 
 .site-title-sub::before,
@@ -156,11 +168,22 @@ a:link, a:visited, a:hover, a:active {
   margin: 0 30px;
   background-color: #fff;
   vertical-align: middle;
+
+  @media (max-width: 768px) {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+  }
 }
 
 .site-title {
   margin: 50px 0 40px;
   font-size: 7.6rem;
+
+  @media (max-width: 768px) {
+    margin-top: 35px;
+    font-size: 4rem;
+  }
 }
 
 .site-description {
@@ -207,6 +230,10 @@ a:link, a:visited, a:hover, a:active {
   padding-bottom: 15px;
   letter-spacing: 2px;
   font-size: 4rem;
+
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+  }
 }
 
 .heading::before, .heading::after {
@@ -225,6 +252,10 @@ a:link, a:visited, a:hover, a:active {
 .about-text {
   margin: 30px 0;
   line-height: 2.5;
+
+  @media (max-width: 768px) {
+    line-height: 1.8;
+  }
 }
 
 .works {
@@ -237,11 +268,19 @@ a:link, a:visited, a:hover, a:active {
   width: 100%;
   margin-top: 60px;
   table-layout: fixed;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
 }
   
 .work-box {
   position: relative;
   display: table-cell;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
 }
 
 .work-box::after {
@@ -255,6 +294,12 @@ a:link, a:visited, a:hover, a:active {
   background-size: 100% 100%;
   opacity: 0.2;
   transform: scaleY(-1);
+
+  @media (max-width: 768px) {
+    top: 0;
+    height: 100%;
+    background-size: cover;
+  }
 }
 
 .work-box.tree::after {
@@ -286,6 +331,10 @@ a:link, a:visited, a:hover, a:active {
   display: block;
   width: 100%;
   margin: 0 0 70%;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .work-description {
@@ -295,6 +344,10 @@ a:link, a:visited, a:hover, a:active {
   width: 100%;
   height: 50%;
   z-index: 1;
+
+  @media (max-width: 768px) {
+    position: relative;
+  }
 }
 
 .work-description-inner {
@@ -333,10 +386,19 @@ a:link, a:visited, a:hover, a:active {
   width: 80%;
   margin: 50px auto 0;
   table-layout: fixed;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
 }
 
 .skill-box {
   display: table-cell;
+
+  @media (max-width: 768px) {
+    display: block;
+    margin: 40px auto;
+  }
 }
 
 .skill-icon {
@@ -348,6 +410,13 @@ a:link, a:visited, a:hover, a:active {
   color: #f1b400;
   font-size: 8rem;
   line-height: 142px;
+
+  @media (max-width: 768px) {
+    width: 100px;
+    height: 100px;
+    font-size: 5rem;
+    line-height: 92px;
+  }
 }
 
 .skill-title {
@@ -358,6 +427,10 @@ a:link, a:visited, a:hover, a:active {
 .skill-text {
   margin: 0 20px;
   line-height: 2;
+
+  @media (max-width: 768px) {
+    margin: 0;
+  }
 }
 
 .contact {
@@ -367,6 +440,11 @@ a:link, a:visited, a:hover, a:active {
 .contact-form {
   width: 50%;
   margin: 50px auto 0;
+
+  @media (max-width: 768px) {
+    width: 80%;
+    padding-bottom: 80px;
+  }
 
   input[type=text], textarea {
     display: block;
@@ -412,6 +490,4 @@ a:link, a:visited, a:hover, a:active {
   background-color: #333;
   width: 100%;
 }
-
-
 </style>
