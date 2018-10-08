@@ -277,11 +277,33 @@ a:link, a:visited, a:hover, a:active {
 .work-box {
   position: relative;
   display: table-cell;
+  overflow: hidden;
 
   @media (max-width: 768px) {
     display: block;
   }
 }
+
+.work-box img {
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+}
+
+.work-box:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.work-box:nth-of-type(odd) img {
+  -webkit-transform-origin: top center;
+  transform-origin: top center;
+}
+
+.work-box:nth-of-type(even) img {
+  -webkit-transform-origin: bottom center;
+  transform-origin: bottom center;
+}
+
 
 .work-box::after {
   content: '';
