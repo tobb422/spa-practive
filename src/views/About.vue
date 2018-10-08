@@ -10,6 +10,11 @@
       </div>
     </header>
     <section class="about" id="about">
+      <h2 class="heading">ABOUT ME</h2>
+      <p class="about-text">
+        はじめまして。日本でWebデザイナーをしています。<br>
+        デザインの専門が後を卒業し、制作会社で業務経験を経て、現在はフリーランスとして働いています。
+      </p>
     </section>
     <section class="works">
     </section>
@@ -95,5 +100,38 @@ a:link, a:visited, a:hover, a:active {
 
 .buttons .button {
   margin: 10px;
+}
+
+.about {
+  padding: 80px 30px;
+  background-color: #fff;
+  color: #333;
+}
+
+.heading {
+  position: relative;
+  display: inline-block;
+  margin: 30px 0 15px;
+  padding-bottom: 15px;
+  letter-spacing: 2px;
+  font-size: 4rem;
+}
+
+.heading::before, .heading::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid #999;
+}
+
+.heading::before {
+  bottom: 5px
+}
+
+.about-text {
+  margin: 30px 0;
+  line-height: 2.5;
 }
 </style>
