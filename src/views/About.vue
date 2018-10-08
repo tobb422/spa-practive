@@ -74,6 +74,36 @@
       </div>
     </section>
     <section class="skills">
+      <h2 class="heading">MY SKILLS</h2>
+      <div class="skills-wrapper">
+        <div class="skill-box">
+          <i class="skill-icon">★</i>
+          <div class="skill-title">DESIGN</div>
+          <p class="skill-text">
+            見た目の綺麗さだけじゃなくて、<br/>
+            使いやすさ、情報の伝わりやすさなど、<br/>
+            その先まで考えることを意識しています。
+          </p>
+        </div>
+        <div class="skill-box">
+          <i class="skill-icon">★</i>
+          <div class="skill-title">DESIGN</div>
+          <p class="skill-text">
+            見た目の綺麗さだけじゃなくて、<br/>
+            使いやすさ、情報の伝わりやすさなど、<br/>
+            その先まで考えることを意識しています。
+          </p>
+        </div>
+        <div class="skill-box">
+          <i class="skill-icon">★</i>
+          <div class="skill-title">DESIGN</div>
+          <p class="skill-text">
+            見た目の綺麗さだけじゃなくて、<br/>
+            使いやすさ、情報の伝わりやすさなど、<br/>
+            その先まで考えることを意識しています。
+          </p>
+        </div>
+      </div>
     </section>
     <section class="contact" id="contact">
     </section>
@@ -283,5 +313,43 @@ a:link, a:visited, a:hover, a:active {
 .button-ghost {
   border: 1px solid #fff;
   background-color: rgba(255, 255, 255, 0.15);
+}
+
+.skills {
+  padding: 80px 0;
+  background-color: #fff;
+  color: #333;
+}
+
+.skills-wrapper {
+  display: table;
+  width: 80%;
+  margin: 50px auto 0;
+  table-layout: fixed;
+}
+
+.skill-box {
+  display: table-cell;
+}
+
+.skill-icon {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 30px;
+  border: 4px solid;
+  border-radius: 50%;
+  color: #f1b400;
+  font-size: 8rem;
+  line-height: 142px;
+}
+
+.skill-title {
+  margin: 0 20px 20px;
+  font-size: 2rem;
+}
+
+.skill-text {
+  margin: 0 20px;
+  line-height: 2;
 }
 </style>
