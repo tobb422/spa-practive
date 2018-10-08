@@ -17,6 +17,61 @@
       </p>
     </section>
     <section class="works">
+      <h2 class="heading">WORKS</h2>
+      <div class="works-wrapper">
+        <div class="work-box tree">
+          <img class="work-image" src="../assets/coding.jpg" alt="コーディング画面">
+          <div class="work-description">
+            <div class="work-description-inner">
+              <p class="work-text">
+                ひとつめの制作事例が入ります。<br/>
+                簡単な説明が入ります。<br/>
+                使用ツール：xxx, xxx, xxx<br/>
+                <a href="#" class="button button-ghost">READ MORE</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="work-box building">
+          <img class="work-image" src="../assets/coding.jpg" alt="コーディング画面">
+          <div class="work-description">
+            <div class="work-description-inner">
+              <p class="work-text">
+                ひとつめの制作事例が入ります。<br/>
+                簡単な説明が入ります。<br/>
+                使用ツール：xxx, xxx, xxx<br/>
+                <a href="#" class="button button-ghost">READ MORE</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="work-box lake">
+          <img class="work-image" src="../assets/coding.jpg" alt="コーディング画面">
+          <div class="work-description">
+            <div class="work-description-inner">
+              <p class="work-text">
+                ひとつめの制作事例が入ります。<br/>
+                簡単な説明が入ります。<br/>
+                使用ツール：xxx, xxx, xxx<br/>
+                <a href="#" class="button button-ghost">READ MORE</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="work-box sky">
+          <img class="work-image" src="../assets/coding.jpg" alt="コーディング画面">
+          <div class="work-description">
+            <div class="work-description-inner">
+              <p class="work-text">
+                ひとつめの制作事例が入ります。<br/>
+                簡単な説明が入ります。<br/>
+                使用ツール：xxx, xxx, xxx<br/>
+                <a href="#" class="button button-ghost">READ MORE</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="skills">
     </section>
@@ -133,5 +188,100 @@ a:link, a:visited, a:hover, a:active {
 .about-text {
   margin: 30px 0;
   line-height: 2.5;
+}
+
+.works {
+  background-color: #383634;
+  padding: 80px 0;
+}
+
+.works-wrapper {
+  display: table;
+  width: 100%;
+  margin-top: 60px;
+  table-layout: fixed;
+}
+  
+.work-box {
+  position: relative;
+  display: table-cell;
+}
+
+.work-box::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: no-repeat;
+  background-size: 100% 100%;
+  opacity: 0.2;
+  transform: scaleY(-1);
+}
+
+.work-box.tree::after {
+  background-image: url("../assets/bg-news.png") ;
+}
+
+.work-box.building::after {
+  background-image: url("../assets/bg-header.png") ;
+}
+
+.work-box.lake::after {
+  background-image: url("../assets/logo.png") ;
+}
+
+.work-box.sky::after {
+  background-image: url("../assets/coding.jpg") ;
+}
+
+.work-box:nth-child(odd) .work-image {
+  margin: 60% 0 0;
+}
+
+.work-box:nth-child(odd) .work-description,
+.work-box:nth-child(odd)::after {
+  top: 0;
+}
+
+.work-image {
+  display: block;
+  width: 100%;
+  margin: 0 0 70%;
+}
+
+.work-description {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  z-index: 1;
+}
+
+.work-description-inner {
+  display: table;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.work-text {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 1.2rem;
+  line-height: 2;
+
+  .button {
+    width: 60%;
+    margin-top: 20px;
+    padding: 3px;
+  }
+}
+
+.button-ghost {
+  border: 1px solid #fff;
+  background-color: rgba(255, 255, 255, 0.15);
 }
 </style>
