@@ -6,7 +6,7 @@
       <p class="site-description">Check out some of my works.</p>
       <div class="buttons">
         <a class="button" href="#about">LEARN MORE</a>
-        <a class="button-showy" href="contact">SEND MESSAGE</a>
+        <a class="button-showy" href="#contact">SEND MESSAGE</a>
       </div>
     </header>
     <section class="about" id="about">
@@ -106,8 +106,15 @@
       </div>
     </section>
     <section class="contact" id="contact">
+      <h2 class="heading">CONTACT</h2>
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="NAME">
+        <textarea name="message" PLACEHOLDER="MESSAGE"></textarea>
+        <input type="submit" value="SEND">
+      </form>
     </section>
     <footer class="footer">
+      © sample site
     </footer>
   </div>
 </template>
@@ -352,4 +359,59 @@ a:link, a:visited, a:hover, a:active {
   margin: 0 20px;
   line-height: 2;
 }
+
+.contact {
+  padding: 80px 0 150px;
+}
+
+.contact-form {
+  width: 50%;
+  margin: 50px auto 0;
+
+  input[type=text], textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 0;
+    background-color: rgba(255, 2555, 2555, 0.05);
+    color: #fff;
+    outline: none;
+  }
+
+  input[type=text]:focus, textarea:focus {
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5) inset;
+
+  }
+
+  textarea {
+    height: 150px;
+  }
+
+  input[type=submit] {
+    display: block;
+    width: 200px;
+    margin: 40px auto 0;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+}
+
+.footer {
+  padding: 12px 0;
+  font-size: 1.3rem;
+  background-color: #333;
+  width: 100%;
+}
+
+
 </style>
