@@ -82,100 +82,99 @@ export default {
 </script>
 
 <style lang="scss">
+html {
+  font-size: 65%;
+}
 
-  html {
-    font-size: 65%;
+body {
+  font-family: "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.429;
+}
+
+ul li {
+  font-size: 1.4rem;
+  list-style-type: square;
+  line-height: 1.429;
+}
+
+table {
+  font-size: 1.4rem;
+  line-height: 1.429;
+  border: 1px solid #cccccc;
+  border-collapse: collapse;
+  width: 100%;
+
+  th,
+  td {
+    border: 1px solid #cccccc;
+    padding: 5px 10px;
   }
 
-  body {
-    font-family: "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif;
+  th {
+    background-color: #eeeeee;
+    text-align: left;
   }
+
+  caption {
+    text-align: left;
+    font-weight: bold;
+  }
+}
+
+.page-title {
+  font-size: 2.6rem;
+  background-color: #f2f2e5;
+  padding: 5px 15px;
+  line-height: 1.231;
+}
+
+.heading-typeA {
+  font-size: 1.8rem;
+  color: #349fa6;
+  border-bottom: solid 1px #349fa6;
+  padding: 5px;
+  line-height: 1.333;
+}
+
+.heading-typeB {
+  font-size: 1.6rem;
+  border-left: solid 5px #e3e4d9;
+  padding: 10px;
+  line-height: 1.375;
+}
+
+.heading-typeC {
+  font-size: 1.4rem;
+  line-height: 1.429;
+}
+
+.article-detail-head {
+  border-bottom: solid 1px #cccccc;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+}
+
+.article-detail-foot {
+  border-top: solid 1px #cccccc;
+  margin-top: 30px;
+  padding-top: 15px;
+}
+
+.article-detail-body section {
+  margin: 30px 0;
+}
+
+.credit-unit {
+  padding: 10px;
+  border: solid 1px #cccccc;
 
   p {
-    font-size: 1.4rem;
-    line-height: 1.429;
+    font-size: 1.2rem;
+    line-height: 1.5;
   }
-
-  ul li {
-    font-size: 1.4rem;
-    list-style-type: square;
-    line-height: 1.429;
-  }
-
-  table {
-    font-size: 1.4rem;
-    line-height: 1.429;
-    border: 1px solid #cccccc;
-    border-collapse: collapse;
-    width: 100%;
-
-    th,
-    td {
-      border: 1px solid #cccccc;
-      padding: 5px 10px;
-    }
-    
-    th {
-      background-color: #eeeeee;
-      text-align: left;
-    }
-
-    caption {
-      text-align: left;
-      font-weight: bold;
-    }
-  }
-
-  .page-title {
-    font-size: 2.6rem;
-    background-color: #F2F2E5;
-    padding: 5px 15px;
-    line-height: 1.231;
-  }
-
-  .heading-typeA {
-    font-size: 1.8rem;
-    color: #349FA6;
-    border-bottom: solid 1px #349FA6;
-    padding: 5px;
-    line-height: 1.333;
-  }
-
-  .heading-typeB {
-    font-size: 1.6rem;
-    border-left: solid 5px #E3E4D9;
-    padding: 10px;
-    line-height: 1.375;
-  }
-
-  .heading-typeC {
-    font-size: 1.4rem;
-    line-height: 1.429;
-  }
-
-  .article-detail-head {
-    border-bottom: solid 1px #cccccc;
-    margin-bottom: 30px;
-    padding-bottom: 15px;
-  }
-
-  .article-detail-foot {
-    border-top: solid 1px #cccccc;
-    margin-top: 30px;
-    padding-top: 15px;
-  }
-
-  .article-detail-body section {
-    margin: 30px 0;
-  }
-
-  .credit-unit {
-    padding: 10px;
-    border: solid 1px #cccccc;
-
-    p {
-      font-size: 1.2rem;
-      line-height: 1.5;
-    }
-  }
+}
 </style>
