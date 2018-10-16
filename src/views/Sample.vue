@@ -186,7 +186,7 @@ figcaption {
 }
 
 #site-title {
-  font-size: 3.0rem;
+  font-size: 3rem;
   line-height: 1.2;
   margin-bottom: 0;
 }
@@ -244,7 +244,7 @@ figcaption {
     margin: 10px 5px;
     list-style: none;
   }
-  
+
   .news-list time {
     font-weight: bold;
     display: block;

@@ -2,6 +2,7 @@ import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/Home.vue";
 import Sample from "./views/Sample.vue";
+import Step from "./views/Step.vue";
 
 Vue.use(Router);
 
@@ -24,6 +25,11 @@ export default new Router({
       path: "/sample",
       name: "sample",
       component: Sample
+    },
+    {
+      path: "/step",
+      name: "step",
+      component: Step
     }
   ]
 });
