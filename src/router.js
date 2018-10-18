@@ -3,7 +3,7 @@ import Router from "vue-router";
 import Home from "./views/Home.vue";
 import Sample from "./views/Sample.vue";
 import Step from "./views/Step.vue";
-import Line from "./views/Line.vue";
+import LineBase from "./views/LineBase.vue";
 
 Vue.use(Router);
 
@@ -33,9 +33,9 @@ export default new Router({
       component: Step
     },
     {
-      path: "/line",
-      name: "Line",
-      component: Line
+      path: "/line_base",
+      name: "LineBase",
+      component: LineBase
     }
   ]
 });
