@@ -14,7 +14,7 @@
 export default { name: "Footer" };
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 .footer {
   width: 100%;
   padding: 20px 0 30px;

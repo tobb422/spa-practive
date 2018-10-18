@@ -1,5 +1,5 @@
 <template lang="pug">
-section
+section.line-base
   div.site
     a(href="#") TimeSwitch
 
@@ -40,6 +40,12 @@ section
       | もちろん、何かをつけたり、かけたりして食べるのも美味しいです。
       | 定番としては、塩、砂糖、マヨネーズ、オリーブオイルなどがおすすめです。
 
+    aside.sns
+      ul
+        li: a(href="#" class="fa fa-twitter") Twitter
+        li: a(href="#") Facebook
+        li: a(href="#") Google+
+
   aside.side
     .special
       h2 特集記事
@@ -53,11 +59,11 @@ section
       h2 おすすめ記事
       ul
         li: a(href="#")
-          img(src="../assets/logo.png")
-          | はじめてのフラワーアレンジメント
+          img(src="../assets/coding.jpg")
+          span はじめてのフラワーアレンジメント
         li: a(href="#")
-          img(src="../assets/logo.png")
-          | 古い端末が出てきたので充電してみたら・・・
+          img(src="../assets/coding.jpg")
+          span 古い端末が出てきたので充電してみたら・・・
 
     .ninki
       h2 人気の記事
@@ -92,8 +98,24 @@ export default {
 </script>
 
 <style scoped lang="stylus">
+section
+  display: grid
+  grid-template-columns: 1fr 700px 50px 300px 1fr
+  grid-template-rows: auto auto 40px auto 30px auto
+
+  @media(max-width: 1089px) {
+    grid-template-columns: 20px 7fr 30px 3fr 20px
+  }
+
+  @media(max-width: 767px) {
+    grid-template-columns: 20px 1fr 20px
+    grid-row-start: auto auto 40px auto 30px auto 30px auto
+  }
+
 .site
   margin: 5px 0
+  grid-column-start: 2
+  grid-row-start: 1
 
   a
     color: #83a4a8
@@ -102,12 +124,20 @@ export default {
 
 .menu
   background-color: #7cbac1
+  grid-column-start: 1
+  grid-column-end: -1
+  grid-row-start: 2
+  display: grid
+  grid-template-columns: inherit
+  grid-template-rows: auto
 
   ul
     margin: 0
     padding: 0
     list-style: none
     display: flex
+    grid-column-start: 2
+    grid-row-start: -2
 
   li a
     display: block
@@ -116,10 +146,18 @@ export default {
     font-size: 1.4rem
     text-decoration: none
 
+    @media(max-width: 767px) {
+      padding: 15px 8px
+      font-size: 10px
+    }
+
   li a:hover
     background-color: #eeeeee
 
 .kiji
+  grid-column-start: 2
+  grid-row-start: 4
+
   h1
     margin-top: 0
     margin-bottom: 20px
@@ -152,6 +190,14 @@ export default {
   color: #666666
 
 .side
+  grid-column-start: 4
+  grid-row-start: 4
+
+  @media(max-width: 767px) {
+    grid-column-start: 2
+    grid-row-start: 6
+  }
+
   div
     margin-bottom: 30px
 
@@ -182,21 +228,64 @@ export default {
   li a:hover
     background-color: #eeeeee
 
+.sns
+  @extend .aside-base
+
 .special
   @extend .aside-base
 
 .osusume
   @extend .aside-base
 
+  li a
+    position: relative
+    padding: 0
+    margin-bottom: 5px
+
+  img
+    vertical-align: bottom
+
+  span
+    display: flex
+    justify-content: center
+    align-items: center
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    padding: 0 10px
+    background-color: rgba(0, 0, 0, 0.4)
+    color: #ffffff
+
 .ninki
   @extend .aside-base
 
+  li a
+    display: flex
+    align-items: center
+
+  img
+    margin-right: 15px
+
 .copyright
+  grid-column-start: 1
+  grid-column-end: -1
+  grid-row-start:-2
   border-top: solid 1px #dddddd
   padding: 20px 0
+  display: grid
+  grid-template-columns: inherit
+  grid-template-rows: auto
 
   p
     margin: 0
     color: #666666
     font-size: 1.4rem
+    grid-column-start: 2
+    grid-column-end: -2
+
+    @media(max-width: 767px) {
+      grid-row-start: -1
+    }
 </style>
