@@ -4,6 +4,7 @@ import Home from "./views/Home.vue";
 import Sample from "./views/Sample.vue";
 import Step from "./views/Step.vue";
 import LineBase from "./views/LineBase.vue";
+import FreeLayout from "./views/FreeLayout";
 
 Vue.use(Router);
 
@@ -36,6 +37,11 @@ export default new Router({
       path: "/line_base",
       name: "LineBase",
       component: LineBase
+    },
+    {
+      path: "/free_layout",
+      name: "FreeLayout",
+      component: FreeLayout
     }
   ]
 });
