@@ -6,6 +6,8 @@ import Step from "./views/Step.vue";
 import LineBase from "./views/LineBase.vue";
 import FreeLayout from "./views/FreeLayout";
 import Broken from "./views/Broken";
+import Hello from "./views/Hello";
+import TodoList from "./views/TodoList.vue";
 
 Vue.use(Router);
 
@@ -48,6 +50,16 @@ export default new Router({
       path: "/broken",
       name: "Broken",
       component: Broken
+    },
+    {
+      path: "/hello",
+      name: "Hello",
+      component: Hello
+    },
+    {
+      path: "/todo_list",
+      name: "TodoList",
+      component: TodoList
     }
   ]
 });

@@ -35,7 +35,7 @@ section
         | 活用できるようにします。
     .gaiyou: a(href="#"): span.envelope
       h2 24時間サポート
-      p
+      px
         | 24時間サポートでトラブルにも
         br
         | 素早く対応します。
