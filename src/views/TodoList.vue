@@ -20,14 +20,14 @@ export default {
     }
   },
   methods: {
-    sendTodo: function() {
+    sendTodo() {
       this.list.push({
         text: this.todo,
         status: 'todo'
       });
       this.todo = "";
     },
-    doneTodo: function(item) {
+    doneTodo(item) {
       if (item.status == "done") {
         item.status = "todo";
       } else {

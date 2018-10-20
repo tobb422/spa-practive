@@ -8,6 +8,7 @@ import FreeLayout from "./views/FreeLayout";
 import Broken from "./views/Broken";
 import Hello from "./views/Hello";
 import TodoList from "./views/TodoList.vue";
+import VuexTest from "./views/VuexTest";
 
 Vue.use(Router);
 
@@ -60,6 +61,11 @@ export default new Router({
       path: "/todo_list",
       name: "TodoList",
       component: TodoList
+    },
+    {
+      path: "/vuex-test",
+      name: "VuexTest",
+      component: VuexTest
     }
   ]
 });
